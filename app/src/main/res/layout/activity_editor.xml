@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <!--Product name-->
+    <LinearLayout
+        android:id="@+id/container_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_product_name"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+            <EditText
+                style="@style/EditorFieldStyle"
+                android:hint="@string/category_product_name"
+                android:id="@+id/edit_product_name"
+                android:inputType="textMultiLine"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--Product price-->
+    <LinearLayout
+        android:id="@+id/container_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_product_price"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+            <EditText
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_product_price"
+                android:id="@+id/edit_product_price"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/currency_unit"
+                style="@style/EditorUnitsStyle"
+                android:text="@string/currency"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--Product quantity-->
+    <LinearLayout
+        android:id="@+id/container_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_product_quantity"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+            <EditText
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_product_quantity"
+                android:id="@+id/edit_product_quantity"
+                android:inputType="number"/>
+            <TextView
+                android:id="@+id/pieces"
+                style="@style/EditorUnitsStyle"
+                android:text="@string/pieces"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--Product supplier-->
+    <LinearLayout
+        android:id="@+id/container_product_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_product_supplier"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+            <EditText
+                style="@style/EditorFieldStyle"
+                android:hint="@string/category_product_supplier"
+                android:id="@+id/edit_product_supplier"
+                android:inputType="textCapWords"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--Supplier Phone Number-->
+    <LinearLayout
+        android:id="@+id/container_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_supplier_phone"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+            <EditText
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_supplier_phone"
+                android:id="@+id/edit_phone_number"
+                android:inputType="phone"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

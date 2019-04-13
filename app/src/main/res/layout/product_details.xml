@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D"
+        android:paddingBottom="8dp"
+        android:text="@string/product_details_name"/>
+    <TextView
+        android:id="@+id/product_details_name"
+        style="@style/ListViewEntry"
+        android:paddingBottom="16dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D"
+        android:paddingBottom="8dp"
+        android:text="@string/price_per_unit"/>
+    <TextView
+        android:id="@+id/product_details_price"
+        android:paddingBottom="16dp"
+        style="@style/ListViewEntry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D"
+        android:paddingBottom="8dp"
+        android:text="@string/quantity_available"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_decrease"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="-"/>
+        <TextView
+            android:id="@+id/product_details_quantity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="16dp"
+            style="@style/ListViewEntry" />
+        <Button
+            android:id="@+id/button_increase"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="+"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D"
+        android:paddingBottom="8dp"
+        android:text="@string/product_details_supplier"/>
+    <TextView
+        android:id="@+id/product_details_supplier"
+        android:paddingBottom="16dp"
+        style="@style/ListViewEntry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D"
+        android:paddingBottom="8dp"
+        android:text="@string/product_details_phone"/>
+    <TextView
+        android:id="@+id/product_details_phone"
+        android:paddingBottom="16dp"
+        style="@style/ListViewEntry" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/edit_button"
+            android:text="@string/edit_button"
+            android:layout_marginRight="48dp"
+            style="@style/ButtonStyle" />
+        <Button
+            android:id="@+id/order_button"
+            android:text="@string/order_button"
+            android:layout_marginRight="48dp"
+            style="@style/ButtonStyle" />
+        <Button
+            android:id="@+id/delete_button"
+            style="@style/ButtonStyle"
+            android:text="@string/delete_button"/>
+    </LinearLayout>
+
+
+</LinearLayout>
